@@ -1,0 +1,7 @@
+<!-- <p>{{'Server'}} with ID {{serverId }} is {{serverStatus}} </p>  -->
+<!-- <p [style]="{color: getColor(),'background-color': getBackgroundColor()}">{{'Server'}} with ID {{serverId }} is {{getServerStatus()}} </p>  -->
+
+<!-- <p [ngStyle]="{color: getColor(),'background-color': getBackgroundColor()}">{{'Server'}} with ID {{serverId }} is {{getServerStatus()}} </p>  -->
+
+<p [ngStyle]="currentStyle"  [ngClass]="{online:serverStatus==='online'}">{{'Server'}} with ID {{serverId }} is {{getServerStatus()}} </p> 
+<!-- <p [style]="currentStyle">{{'Server'}} with ID {{serverId }} is {{getServerStatus()}} </p>  -->
